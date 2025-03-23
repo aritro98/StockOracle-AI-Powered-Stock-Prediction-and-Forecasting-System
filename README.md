@@ -83,3 +83,17 @@ StockOracle integrates multiple modules to assist investors in making informed d
    ```bash
    python Sentiment_Analysis_and_Forecasting.py
    ```
+
+## Results
+- **Data Quality & Indicator Accuracy**:
+    - Successfully collected and processed 5 years of stock data for 10 companies.
+    - Computed reliable technical indicators (SMA_50, SMA_200, RSI) that correlate with market trends.
+- **Textual and Sentiment Insights**:
+    - Generated a refined textual dataset with corresponding sentiment scores.
+    - Enhanced market analysis by combining numerical data with sentiment insights.
+- **Effective Topic Modeling**:
+    - BERTopic successfully identified key topics in financial texts.
+    - Provided clear visualizations that reveal underlying market themes, contributing to deeper insight into market sentiment.
+- **Robust Forecasting Performance**:
+    - Forecasting techniques produced actionable predictions on future stock price trends.
+    - Integration of sentiment analysis with forecasting yielded improved recommendation accuracy (BUY, SELL, HOLD).
