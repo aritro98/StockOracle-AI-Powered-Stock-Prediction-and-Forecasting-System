@@ -16,3 +16,7 @@ StockOracle is an integrated system that collects and analyzes stock market data
 7. [Results](#results)
 8. [Future Scope](#future-scope)
 
+## Overview
+StockOracle integrates multiple modules to assist investors in making informed decisions:
+- **Data Ingestion & Preprocessing**: Efficient extraction, cleaning, and structuring of raw stock data.
+- **Trend Prediction**: Applies linear regression models to forecast short-term price movements and issue actionable recommendations.
