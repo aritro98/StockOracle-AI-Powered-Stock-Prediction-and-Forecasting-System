@@ -1,0 +1,1 @@
+# StockOracle: AI-Powered Stock Prediction & Forecasting System
