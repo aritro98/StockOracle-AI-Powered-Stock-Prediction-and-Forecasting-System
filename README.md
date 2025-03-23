@@ -23,3 +23,7 @@ StockOracle integrates multiple modules to assist investors in making informed d
 - **Topic Modeling**: Applies BERTOPIC to analyze financial text data and extract prevailing themes or topics.
 - **Forecasting**: Leverages Facebook's Prophet model to predict future stock trends over customizable periods.
 - **Interactive Dashboard**: A web-based UI built with Dash and Plotly that displays historical data, predictions, and topic insights interactively.
+
+## Project Workflow
+1. **Data Collection & Technical Indicator Calculation**
+    - **Data Source**: Collected historical stock data for 10 companies using the yfinance library over 5 years (from 2020-01-17 to 2025-01-16).
