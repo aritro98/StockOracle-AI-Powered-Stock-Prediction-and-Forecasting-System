@@ -60,3 +60,13 @@ StockOracle integrates multiple modules to assist investors in making informed d
 - **Prophet**: For time-series forecasting (integrated within the sentiment analysis script).
 - **Jupyter Notebooks**: For step-by-step data processing.
 - **Dash/Plotly**: For interactive dashboard visualizations.
+
+## Installation and Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/StockOracle-AI-Powered-Stock-Prediction-and-Forecasting-System.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd StockOracle-AI-Powered-Stock-Prediction-and-Forecasting-System
+   ```
