@@ -50,3 +50,13 @@ StockOracle integrates multiple modules to assist investors in making informed d
 - **Forecasting & Predictive Analysis**:
     - Applies forecasting techniques for long-term stock predictions.
     - Combines technical analysis with sentiment signals for recommendations.
+
+## Technologies Used
+- **Python**: Primary language for data analysis and application logic.
+- **yfinance**: To collect historical stock market data.
+- **pandas_ta**: For calculating technical indicators like SMA and RSI.
+- **Pandas**: For data manipulation and preprocessing.
+- **BERTopic**: For topic modeling and extraction of textual insights.
+- **Prophet**: For time-series forecasting (integrated within the sentiment analysis script).
+- **Jupyter Notebooks**: For step-by-step data processing.
+- **Dash/Plotly**: For interactive dashboard visualizations.
