@@ -70,3 +70,7 @@ StockOracle integrates multiple modules to assist investors in making informed d
    ```bash
    cd StockOracle-AI-Powered-Stock-Prediction-and-Forecasting-System
    ```
+3. Install Dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
