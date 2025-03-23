@@ -30,3 +30,7 @@ StockOracle integrates multiple modules to assist investors in making informed d
     - **Technical Indicators**: Calculated key indicators such as `SMA_50`, `SMA_200`, and `RSI` using pandas_ta.
     - **Dataset**: Processed data is saved in the CSV file `stock_data_5_years`.
     - **Implementation**: Documented in the `Stock_Trends.ipynb` notebook.
+- **Textual and Sentiment Data Generation**
+    - **Dataset Creation**: Generated textual descriptions and sentiment scores from the `stock_data_5_years` CSV file.
+    - **Output**: The refined textual and sentiment data is stored in the CSV file `refined_textual_data`.
+    - **Implementation**: Detailed in the `Textual_Data.ipynb` notebook.
