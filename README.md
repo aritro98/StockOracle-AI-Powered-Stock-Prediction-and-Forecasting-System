@@ -34,3 +34,23 @@ StockOracle integrates multiple modules to assist investors in making informed d
     - **Dataset Creation**: Generated textual descriptions and sentiment scores from the `stock_data_5_years` CSV file.
     - **Output**: The refined textual and sentiment data is stored in the CSV file `refined_textual_data`.
     - **Implementation**: Detailed in the `Textual_Data.ipynb` notebook.
+- **Topic Modeling with BERTopic**
+    - **Topic Representation**: Applied the BERTopic model on the `refined_textual_data` CSV to extract key topics.
+    - **Insights & Visualization**: Insights are generated in the `Topic_Representation.ipynb` notebook and are visualized in `Topic_Visualization.html`.
+- **Sentiment Analysis and Forecasting**
+    - **Final Analysis**: Combines sentiment analysis with forecasting techniques to deliver actionable market insights.
+    - **Implementation**: Managed by the `Sentiment_Analysis_and_Forecasting.py` script.
+
+## Key Features
+- **Comprehensive Data Collection**:
+    - Fetches historical data for 10 companies.
+    - Calculates technical indicators (SMA_50, SMA_200, RSI).
+- **Data Preprocessing & Sentiment Extraction**:
+    - Converts raw data into refined datasets.
+    - Extracts sentiment from textual data for market mood analysis.
+- **Advanced Topic Modeling**:
+    - Uses BERTOPIC to uncover underlying themes in financial texts.
+    - Provides visual insights on topic distribution.
+- **Forecasting & Predictive Analysis**:
+    - Applies forecasting techniques for long-term stock predictions.
+    - Combines technical analysis with sentiment signals for recommendations.
