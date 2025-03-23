@@ -26,4 +26,5 @@ StockOracle integrates multiple modules to assist investors in making informed d
 
 ## Project Workflow
 - **Data Collection & Technical Indicator Calculation**
-    - **Data Source**: Collected historical stock data for 10 companies using the yfinance library over 5 years (from 2020-01-17 to 2025-01-16).
+    - **Data Source**: Collected historical stock data for 10 companies using the yfinance library over 5 years (from `2020-01-17` to `2025-01-16`).
+    - **Technical Indicators**: Calculated indicators such as SMA_50, SMA_200, and RSI using pandas_ta.
