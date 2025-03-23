@@ -9,3 +9,10 @@ StockOracle is an integrated system that collects and analyzes stock market data
     - [Textual and Sentiment Data Generation](#textual-and-sentiment-data-generation)
     - [Topic Modeling with BERTopic](#topic-modeling-with-bertopic)
     - [Sentiment Analysis and Forecasting](#sentiment-analysis-and-forecasting)
+3. [Key Features](#key-features)
+4. [Technologies Used](#technologies-used)
+5. [Installation and Setup](#installation-and-setup)
+6. [Usage](#usage)
+7. [Results](#results)
+8. [Future Scope](#future-scope)
+
