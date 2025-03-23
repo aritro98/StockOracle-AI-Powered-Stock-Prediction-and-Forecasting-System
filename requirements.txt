@@ -1,0 +1,10 @@
+dash
+numpy
+pandas
+pandas_ta
+plotly
+prophet
+scikit-learn
+yfinance
+matplotlib
+bertopic
