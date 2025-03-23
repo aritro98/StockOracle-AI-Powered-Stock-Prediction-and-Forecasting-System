@@ -97,3 +97,9 @@ StockOracle integrates multiple modules to assist investors in making informed d
 - **Robust Forecasting Performance**:
     - Forecasting techniques produced actionable predictions on future stock price trends.
     - Integration of sentiment analysis with forecasting yielded improved recommendation accuracy (BUY, SELL, HOLD).
+
+## Future Scope
+- Improved Forecasting: Explore advanced forecasting models for enhanced prediction accuracy.
+- Real-Time Data Integration: Incorporate live data feeds for dynamic market analysis.
+- Expanded Sentiment Analysis: Refine sentiment extraction to capture market moods more accurately.
+- Dashboard Development: Build an interactive dashboard for comprehensive real-time visualization.
