@@ -98,7 +98,7 @@ StockOracle integrates multiple modules to assist investors in making informed d
     - Forecasting techniques produced actionable predictions on future stock price trends.
     - Integration of sentiment analysis with forecasting yielded improved recommendation accuracy (BUY, SELL, HOLD).
 
-## Contributors
+## Contributors & Contributions
 - Neeladri Bandopadhyay: Data Processing & Extraction
 - Arito Dutta: Stock Trend Prediction
 - Lopamudra Mukherjee: Stock Price Forecasting & Documentation
