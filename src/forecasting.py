@@ -11,7 +11,7 @@ warnings.filterwarnings("ignore")
 
 # Cache feature engineering to avoid recomputation
 @st.cache_data(show_spinner=False)
-def _prepare_features(data, lookback):
+def prepare_features(data, lookback):
     df = data.copy().sort_values('date')
     # lagged close values
     for lag in range(1, lookback + 1):
@@ -26,14 +26,14 @@ def _prepare_features(data, lookback):
 
 # Cache model training to reuse across runs
 @st.cache_resource(show_spinner=False)
-def _train_ml_model(X, y, max_iter=100):
+def train_ml_model(X, y, max_iter=100):
     # Use fast histogram-based gradient boosting
     model = HistGradientBoostingRegressor(max_iter=max_iter)
     model.fit(X, y)
     return model
 
 @st.cache_data(show_spinner=False)
-def _holt_winters_forecast(price_series, days):
+def holt_winters_forecast(price_series, days):
     """
     Fast Holt's linear trend exponential smoothing.
     """
@@ -46,20 +46,20 @@ def _holt_winters_forecast(price_series, days):
     return np.array(model.forecast(days))
 
 
-def _ml_forecast(data, days, lookback=30, max_iter=50):
+def ml_forecast(data, days, lookback=30, max_iter=50):
     """
     Forecast via gradient boosting on lagged features.
     """
     if len(data) < lookback + 1:
         return None
 
-    df_feat, features = _prepare_features(data, lookback)
+    df_feat, features = prepare_features(data, lookback)
     if df_feat.empty:
         return None
 
     X = df_feat[features].values
     y = df_feat['close'].values
-    model = _train_ml_model(X, y, max_iter)
+    model = train_ml_model(X, y, max_iter)
 
     # iterative forecasting
     last_window = data.sort_values('date').tail(lookback)
@@ -87,8 +87,8 @@ def forecast_stock_prices(data, days=30):
     last_price = price_series[-1]
 
     # Generate HW and ML forecasts in parallel
-    hw = _holt_winters_forecast(price_series, days)
-    ml = _ml_forecast(df, days)
+    hw = holt_winters_forecast(price_series, days)
+    ml = ml_forecast(df, days)
 
     # Combine with dynamic weight: more weight to HW early, ML later
     weights = np.linspace(0.7, 0.3, days)
