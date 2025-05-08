@@ -81,7 +81,7 @@ StockOracle integrates multiple modules to assist investors in making informed d
    streamlit run src/app.py
    ```
 1. Select a stock ticker from the sidebar (e.g. AAPL, MSFT).
-2. Select a forecast period and time unit (days/months/years).
+2. Select a forecast period and time unit (days / months / years).
 3. View historical price chart, forecast price chart and emotion distribution.
 4. Take note of the BUY / SELL / HOLD recommendation with confidence score displayed.
 
