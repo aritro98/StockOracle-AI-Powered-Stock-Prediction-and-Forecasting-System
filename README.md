@@ -53,13 +53,14 @@ StockOracle integrates multiple modules to assist investors in making informed d
 
 ## Technologies Used
 - **Python**: Primary language for data analysis and application logic.
-- **yfinance**: To collect historical stock market data.
-- **pandas_ta**: For calculating technical indicators like SMA and RSI.
-- **Pandas**: For data manipulation and preprocessing.
-- **BERTopic**: For topic modeling and extraction of textual insights.
-- **Prophet**: For time-series forecasting (integrated within the sentiment analysis script).
 - **Jupyter Notebooks**: For step-by-step data processing.
-- **Dash/Plotly**: For interactive dashboard visualizations.
+- **yfinance**: To collect historical stock market data.
+- **Pandas & Numpy**: For data manipulation & performing numerical operations.
+- **pandas_ta**: For calculating technical indicators like SMA and RSI.
+- **BERTopic**: For topic modeling and extraction of textual insights.
+- **statsmodels & scikit‑learn**: Holt–Winters exponential smoothing and HistGradientBoostingRegressor both are used for forecasting future stock prices and generate recommendations.
+- **Plotly**: For interactive charting.
+- **Streamlit**: An interactive dashboard framework.
 
 ## Installation and Setup
 1. Clone the repository:
