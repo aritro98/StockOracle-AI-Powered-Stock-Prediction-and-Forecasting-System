@@ -76,12 +76,9 @@ StockOracle integrates multiple modules to assist investors in making informed d
    ```
 
 ## Usage
-1. Data Processing and Indicator Calculation: Run `Stock_Trends.ipynb` in Jupyter Notebook to fetch data and compute technical indicators.
-2. Textual Data Generation: Execute `Textual_Data.ipynb` to produce the `refined_textual_data` CSV containing textual and sentiment data.
-3. Topic Modeling: Open and run `Topic_Representation.ipynb` to apply the BERTOPIC model and review the topic visualization in `Topic_Visualization.html`.
-4. Sentiment Analysis & Forecasting: Run the final analysis script:
+### Launch the Streamlit dashboard
    ```bash
-   python Sentiment_Analysis_and_Forecasting.py
+   streamlit run src/app.py
    ```
 
 ## Results
@@ -110,3 +107,4 @@ StockOracle integrates multiple modules to assist investors in making informed d
 - Expanded Sentiment Analysis: Refine sentiment extraction to capture market moods more accurately.
 - Enhanced NLP: Employ transformer classifiers for deeper sentiment and event extraction.
 - Production Deployment: Containerize with Docker and orchestrate via Kubernetes for scalable serving.
+- User Authentication & Multi‑User Support: Add login, user profiles, and personalized watchlists.
