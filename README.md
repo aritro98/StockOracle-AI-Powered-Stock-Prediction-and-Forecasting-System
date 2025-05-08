@@ -64,16 +64,23 @@ StockOracle integrates multiple modules to assist investors in making informed d
 ## Installation and Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/StockOracle-AI-Powered-Stock-Prediction-and-Forecasting-System.git
+   git clone https://github.com/YourUser/StockOracle-AI-Powered-Stock-Prediction-Forecasting-System.git
+   cd StockOracle-AI-Powered-Stock-Prediction-Forecasting-System
    ```
-2. Navigate to the project directory:
+2. Create & activate a virtual environment:
    ```bash
-   cd StockOracle-AI-Powered-Stock-Prediction-and-Forecasting-System
+   python3 -m venv venv
+   source venv/bin/activate      # On macOS/Linux
+   venv\Scripts\activate       # On Windows
    ```
 3. Install Dependencies:
    ```bash
    pip install -r requirements.txt
    ```
+4. Generate datasets & visuals
+   * Run `notebooks/Stock_Trends.ipynb` to produce `data/stock_data_5_years.csv`.
+   * Run `notebooks/Textual_Data.ipynb` to produce `data/refined_textual_data.csv`.
+   * Run `notebooks/Topic_Classification.ipynb` to generate `visualizations/Topic_Visualization.html`.
 
 ## Usage
 ### Launch the Streamlit dashboard
