@@ -108,4 +108,5 @@ StockOracle integrates multiple modules to assist investors in making informed d
 - Improved Forecasting: Explore advanced forecasting models for enhanced prediction accuracy.
 - Real-Time Data Integration: Incorporate live data feeds for dynamic market analysis.
 - Expanded Sentiment Analysis: Refine sentiment extraction to capture market moods more accurately.
-- Dashboard Development: Build an interactive dashboard for comprehensive real-time visualization.
+- Enhanced NLP: Employ transformer classifiers for deeper sentiment and event extraction.
+- Production Deployment: Containerize with Docker and orchestrate via Kubernetes for scalable serving.
