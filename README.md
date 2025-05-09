@@ -14,11 +14,10 @@ StockOracle is an integrated system that collects and analyzes stock market data
 
 ## Overview
 StockOracle integrates multiple modules to assist investors in making informed decisions:
-- **Data Ingestion & Preprocessing**: Efficient extraction, cleaning, and structuring of raw stock data.
-- **Trend Prediction**: Applies linear regression models to forecast short-term price movements and issue actionable recommendations.
-- **Topic Modeling**: Applies BERTOPIC to analyze financial text data and extract prevailing themes or topics.
-- **Forecasting**: Leverages Facebook's Prophet model to predict future stock trends over customizable periods.
-- **Interactive Dashboard**: A web-based UI built with Dash and Plotly that displays historical data, predictions, and topic insights interactively.
+- **Data Acquisition & Indicator Engineering**: Collects 5 years of historical stock data (10 tickers, `2020‑01‑17` to `2025‑01‑16`) via `yfinance` and computes technical indicators using `pandas_ta`.  
+- **Textual & Sentiment Enrichment**: Gathers market‑relevant text, cleans and tokenizes it, then calculates sentiment scores to produce a refined textual dataset.  
+- **Topic Modeling with BERTopic**: Applies BERTopic on the enriched text to surface latent themes, enabling thematic market interpretation alongside pure price analysis.  
+- **Hybrid Forecasting & Dashboard**: Leverages Holt‑Winters Exponential Smoothing and HistGradientBoosting to forecast price trajectories, then integrates all data into a Streamlit UI that displays charts, topic insights, emotion distributions and generates BUY/SELL/HOLD recommendations.
 
 ## Project Workflow
 - **Data Collection & Technical Indicator Calculation** (`notebooks/Stock_Trends.ipynb`):
