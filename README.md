@@ -41,15 +41,18 @@ StockOracle integrates multiple modules to assist investors in making informed d
 - **Comprehensive Data Collection**:
     - Fetches historical data for 10 companies.
     - Calculates technical indicators (SMA_50, SMA_200, RSI).
-- **Data Preprocessing & Sentiment Extraction**:
-    - Converts raw data into refined datasets.
-    - Extracts sentiment from textual data for market mood analysis.
+- **Rich Textual Insights**  
+    - Emotion labeling (excited, disappointed, optimistic, etc.).  
+    - Sentiment polarity mapping (bullish=1, bearish=–1, neutral=0).  
 - **Advanced Topic Modeling**:
     - Uses BERTOPIC to uncover underlying themes in financial texts.
     - Provides visual insights on topic distribution.
-- **Forecasting & Predictive Analysis**:
-    - Applies forecasting techniques for long-term stock predictions.
-    - Combines technical analysis with sentiment signals for recommendations.
+- **Robust Hybrid Forecasting**:
+    - Statistical (Holt–Winters) + ML (HistGradientBoosting) ensemble.
+    - Dynamic weighting yields smoother long-term stock predictions.
+- **Interactive Dashboard**  
+    - Streamlit UI with ticker selector, forecast horizon control, and precise confidence details.  
+    - Plotly charts for price, forecast, and sentiment distributions.
 
 ## Technologies Used
 - **Python**: Primary language for data analysis and application logic.
