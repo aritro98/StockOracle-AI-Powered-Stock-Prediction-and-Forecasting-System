@@ -10,7 +10,8 @@ StockOracle is an integrated system that collects and analyzes stock market data
 5. [Installation and Setup](#installation-and-setup)
 6. [Usage](#usage)
 7. [Results](#results)
-8. [Future Scope](#future-scope)
+8. [Contributors and Contributions](#contributors-and-contributions)
+9. [Future Scope](#future-scope)
 
 ## Overview
 StockOracle integrates multiple modules to assist investors in making informed decisions:
