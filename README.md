@@ -21,21 +21,21 @@ StockOracle integrates multiple modules to assist investors in making informed d
 - **Interactive Dashboard**: A web-based UI built with Dash and Plotly that displays historical data, predictions, and topic insights interactively.
 
 ## Project Workflow
-- **Data Collection & Technical Indicator Calculation**
-    - **Data Source**: Collected historical stock data for 10 companies using the yfinance library over 5 years (from `2020-01-17` to `2025-01-16`).
-    - **Technical Indicators**: Calculated key indicators such as `SMA_50`, `SMA_200`, and `RSI` using pandas_ta.
-    - **Dataset**: Processed data is saved in the CSV file `stock_data_5_years`.
-    - **Implementation**: Documented in the `Stock_Trends.ipynb` notebook.
-- **Textual and Sentiment Data Generation**
-    - **Dataset Creation**: Generated textual descriptions and sentiment scores from the `stock_data_5_years` CSV file.
+- **Data Collection & Technical Indicator Calculation** (`notebooks/Stock_Trends.ipynb`):
+    - **Data Source**: Collected historical stock data for 10 companies using the `yfinance` library over 5 years (from `2020-01-17` to `2025-01-16`).
+    - **Technical Indicators**: Calculated key indicators such as `SMA_50`, `SMA_200`, and `RSI` using `pandas_ta`.
+    - **Dataset**: Processed data is saved in the file `stock_data_5_years.csv` with engineered features.
+- **Textual & Sentiment Data Preparation** (`notebooks/Textual_Data.ipynb`):
+    - **Dataset Creation**: Generated textual descriptions and sentiment scores from the `stock_data_5_years.csv` file.
     - **Output**: The refined textual and sentiment data is stored in the CSV file `refined_textual_data`.
-    - **Implementation**: Detailed in the `Textual_Data.ipynb` notebook.
-- **Topic Modeling with BERTopic**
-    - **Topic Representation**: Applied the BERTopic model on the `refined_textual_data` CSV to extract key topics.
-    - **Insights & Visualization**: Insights are generated in the `Topic_Representation.ipynb` notebook and are visualized in `Topic_Visualization.html`.
-- **Sentiment Analysis and Forecasting**
-    - **Final Analysis**: Combines sentiment analysis with forecasting techniques to deliver actionable market insights.
-    - **Implementation**: Managed by the `Sentiment_Analysis_and_Forecasting.py` script.
+- **Topic Modeling with BERTopic** (`notebooks/Topic_Classification.ipynb` + `visualizations/Topic_Visualization.html`):
+    - **Topic Representation**: Applied the BERTopic model on the `refined_textual_data.csv` file to extract key topics frequencies and representative keywords.
+    - **Insights & Visualization**: Generate interactive HTML visualizations of topic clusters and temporal insights.
+- **Forecasting & Dashboard** (`src/*.py`):
+    - **data_processor.py**: Reads CSVs, aligns technical & textual features, creates time‑series windows per ticker.
+    - **forecasting.py**: Engineers lag and rolling features, fits Holt‑Winters Exponential Smoothing and HistGradientBoostingRegressor, ensembles predictions for all time periods & units, and generates BUY/SELL/HOLD signals based on expected return thresholds.
+    - **visualization.py**: Uses Plotly to render historical price charts, forecast intervals, sentiment distribution histograms, and topic bar charts.
+    - **app.py**: Streamlit front‑end that ties all modules together allows users to select tickers, view dynamic charts, and get recommendations.
 
 ## Key Features
 - **Comprehensive Data Collection**:
