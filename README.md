@@ -33,7 +33,7 @@ StockOracle integrates multiple modules to assist investors in making informed d
     - **Insights & Visualization**: Generate interactive HTML visualizations of topic clusters and temporal insights.
 - **Forecasting & Dashboard** (`src/*.py`):
     - **data_processor.py**: Reads CSVs, aligns technical & textual features, creates time‑series windows per ticker.
-    - **forecasting.py**: Engineers lag and rolling features, fits Holt‑Winters Exponential Smoothing and HistGradientBoostingRegressor, ensembles predictions for all time periods & units, and generates BUY/SELL/HOLD signals based on expected return thresholds.
+    - **forecasting.py**: Fits Holt‑Winters Exponential Smoothing and HistGradientBoostingRegressor, ensembles predictions for all time periods & units, and generates BUY/SELL/HOLD signals based on expected return thresholds.
     - **visualization.py**: Uses Plotly to render historical price charts, forecast intervals, sentiment distribution histograms, and topic bar charts.
     - **app.py**: Streamlit front‑end that ties all modules together allows users to select tickers, view dynamic charts, and get recommendations.
 
