@@ -21,7 +21,7 @@ This dashboard allows you to visualize stock data, analyze sentiment, and get fo
 # Load data
 @st.cache_data
 def load_data():
-    return load_and_process_data('refined_textual_data.csv')
+    return load_and_process_data("C:\\Users\\KIIT\\Documents\\StockOracle-AI-Powered-Stock-Prediction-and-Forecasting-System\\data\\refined_textual_data.csv")
 
 try:
     # Display loading message
