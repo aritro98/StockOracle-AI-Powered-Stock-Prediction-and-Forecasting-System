@@ -107,7 +107,7 @@ try:
             
         
         with col2:
-            st.subheader("Forecast")
+            st.subheader("Forecasting")
             
             # Get forecast data
             with st.spinner(f"Generating forecast for {period_text}..."):
