@@ -68,7 +68,7 @@ StockOracle integrates multiple modules to assist investors in making informed d
 ## Installation and Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YourUser/StockOracle-AI-Powered-Stock-Prediction-Forecasting-System.git
+   git clone https://github.com/aritro98/StockOracle-AI-Powered-Stock-Prediction-Forecasting-System.git
    cd StockOracle-AI-Powered-Stock-Prediction-Forecasting-System
    ```
 2. Create & activate a virtual environment:
