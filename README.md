@@ -4,7 +4,7 @@ StockOracle is an integrated system that collects and analyzes stock market data
 
 ## Table of Contents
 1. [Overview](#overview)
-2. [Project Workflow](#project-workflow)
+2. [Workflow](#workflow)
 3. [Key Features](#key-features)
 4. [Technologies Used](#technologies-used)
 5. [Installation and Setup](#installation-and-setup)
@@ -20,7 +20,7 @@ StockOracle integrates multiple modules to assist investors in making informed d
 - **Topic Modeling with BERTopic**: Applies BERTopic on the enriched text to surface latent themes, enabling thematic market interpretation alongside pure price analysis.  
 - **Hybrid Forecasting & Dashboard**: Leverages Holt‑Winters Exponential Smoothing and HistGradientBoosting to forecast price trajectories, then integrates all data into a Streamlit UI that displays charts, topic insights, emotion distributions and generates BUY/SELL/HOLD recommendations.
 
-## Project Workflow
+## Workflow
 - **Data Collection & Technical Indicator Calculation** (`notebooks/Stock_Trends.ipynb`):
     - **Data Source**: Collected historical stock data for 10 companies using the `yfinance` library over 5 years (from `2020-01-17` to `2025-01-16`).
     - **Technical Indicators**: Calculated key indicators such as `SMA_50`, `SMA_200`, and `RSI` using `pandas_ta`.
