@@ -111,15 +111,15 @@ StockOracle integrates multiple modules to assist investors in making informed d
     - Integration of sentiment analysis with forecasting yielded improved recommendation accuracy (BUY, SELL, HOLD).
 
 ## Contributors & Contributions
-- Neeladri Bandopadhyay: Data Collection & Technical Indicator Engineering
-- Arito Dutta: Stock Trend Prediction & Modeling
-- Lopamudra Mukherjee: Stock Price Forecasting & Documentation
-- Harsh Kumar Singh: Streamlit Dashboard & Sentiment Analysis
+- **Neeladri Bandopadhyay**: Data Collection & Technical Indicator Engineering
+- **Arito Dutta**: Stock Trend Prediction & Modeling
+- **Lopamudra Mukherjee**: Stock Price Forecasting & Documentation
+- **Harsh Kumar Singh**: Streamlit Dashboard & Sentiment Analysis
 
 ## Future Scope
-- Improved Forecasting: Explore advanced forecasting models for enhanced prediction accuracy.
-- Real-Time Data Integration: Incorporate live data feeds for dynamic market analysis.
-- Expanded Sentiment Analysis: Refine sentiment extraction to capture market moods more accurately.
-- Enhanced NLP: Employ transformer classifiers for deeper sentiment and event extraction.
-- Production Deployment: Containerize with Docker and orchestrate via Kubernetes for scalable serving.
-- User Authentication & Multi‑User Support: Add login, user profiles, and personalized watchlists.
+- **Improved Forecasting**: Explore advanced forecasting models for enhanced prediction accuracy.
+- **Real-Time Data Integration**: Incorporate live data feeds for dynamic market analysis.
+- **Expanded Sentiment Analysis**: Refine sentiment extraction to capture market moods more accurately.
+- **Enhanced NLP**: Employ transformer classifiers for deeper sentiment and event extraction.
+- **Production Deployment**: Containerize with Docker and orchestrate via Kubernetes for scalable serving.
+- **User Authentication & Multi‑User Support**: Add login, user profiles, and personalized watchlists.
