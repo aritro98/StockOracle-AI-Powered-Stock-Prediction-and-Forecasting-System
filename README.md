@@ -112,7 +112,7 @@ StockOracle integrates multiple modules to assist investors in making informed d
 
 ## Contributors & Contributions
 - **Neeladri Bandopadhyay**: Data Collection & Technical Indicator Engineering
-- **Arito Dutta**: Stock Trend Prediction & Modeling
+- **Aritro Dutta**: Stock Trend Prediction & Modeling
 - **Lopamudra Mukherjee**: Stock Price Forecasting & Documentation
 - **Harsh Kumar Singh**: Streamlit Dashboard & Sentiment Analysis
 
